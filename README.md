@@ -36,18 +36,18 @@
 
 Нажимаем комбинацию клавиш ctrl+x и загружаемся. После загрузки мы попадаем в emergency mode.
 
-Если меняли ro на rw, то выполняем следующие команды:
+Если не меняли ro на rw, то выполняем следующие команды:
 
 ```
+mount -o remount,rw /sysroot
 chroot /sysroot
 passwd root
 touch /.autorelabel
 ```
 
-Если не меняли ro на rw, то выполняем без mount -o remount,rw /sysroot
+Если меняли ro на rw, то выполняем без mount -o remount,rw /sysroot
 
 ```
-mount -o remount,rw /sysroot
 chroot /sysroot
 passwd root
 touch /.autorelabel
