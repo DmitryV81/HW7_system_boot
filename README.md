@@ -18,3 +18,4 @@
 
 Добавляем в конце строки, начинающейся с linux16 строку init=/bin/sh. В этой же строке меняем ro на rw.
 
+![Первый способ. Вносим изменения в загрузчик](https://github.com/jon/coolproject/raw/master/image/image.png)
